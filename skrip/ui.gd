@@ -12,7 +12,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	var curr_scene = get_tree().current_scene if get_tree() else null
 	var is_in_game = is_instance_valid(curr_scene) and not ("main_menu" in curr_scene.scene_file_path or "victory" in curr_scene.scene_file_path)
-	visible = is_in_game
+	visible = is_in_game and (not Debug or not Debug.hud_hidden)
 	points_label.text = "%d" % Global.points
 	level_label.text = "Level %d" % Global.current_level
 	
@@ -26,6 +26,8 @@ func _input(event: InputEvent) -> void:
 
 func set_paused_state(target_pause: bool) -> void:
 	get_tree().paused = target_pause
+	if Debug:
+		Debug.time_frozen = target_pause
 	if pause_overlay:
 		pause_overlay.visible = target_pause
 	if target_pause:

@@ -223,5 +223,5 @@ position = Vector2(6050, -300)
 
 [node name="NextLevel" parent="." unique_id=401020399 instance=ExtResource("9_nxt")]
 position = Vector2(6199, -273)
-next_scene = "res://scene/victory.tscn"
+next_scene = "res://level_6.tscn"
 next_level_number = 5

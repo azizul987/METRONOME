@@ -7,8 +7,8 @@
 [ext_resource type="Script" uid="uid://dkddfptbip8ab" path="res://skrip/dynamic_bg.gd" id="5_ejlf8"]
 [ext_resource type="PackedScene" uid="uid://cbg8go40i77bj" path="res://object/player.tscn" id="6_yh5ew"]
 [ext_resource type="PackedScene" uid="uid://cd5wab2mnru77" path="res://scene/platform.tscn" id="7_dxhc4"]
-[ext_resource type="PackedScene" uid="uid://c7k2coinsu3id" path="res://object/coin.tscn" id="8_notfv"]
-[ext_resource type="PackedScene" uid="uid://ba8d2totfwvak" path="res://object/next_level.tscn" id="9_hg2ow"]
+[ext_resource type="PackedScene" path="res://object/coin.tscn" id="8_notfv"]
+[ext_resource type="PackedScene" path="res://object/next_level.tscn" id="9_hg2ow"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lvl4a"]
 texture = ExtResource("2_vp58d")
